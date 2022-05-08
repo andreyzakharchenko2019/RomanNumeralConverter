@@ -63,6 +63,10 @@ public class ConvertRomanNumeralToIntPresenter implements ConvertRomanNumeralToI
             for (int i = 0; i < romanNumeral.length; i++) {
                 byte currentCharacter = romanNumeral[i];
                 if (currentCharacter == romanNumeral[i + 1]) {
+                    // Арабские цифры соответствуют байтовому значению букв, обозначающих римские цифры
+                    // 86 - V, 76 - L, 68 - D
+                    // По правилу формирования римских цифр, они не могут повторятся друг за другом
+                    // Например: VV - Недопустимая запись
                     if (currentCharacter == 86 || currentCharacter == 76 || currentCharacter == 68) {
                         showMessage(activity.getResources().getString(R.string.error_roman_numeral));
                         return false;
