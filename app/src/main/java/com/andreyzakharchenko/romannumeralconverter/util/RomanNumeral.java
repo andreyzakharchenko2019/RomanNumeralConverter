@@ -14,8 +14,8 @@ import java.util.Map;
 
 public class RomanNumeral {
 
-    public static Map<Byte, Integer> romanNumeral;
-    public static Map<Integer, List<Integer>> rulesRomanNumeral;
+    public static final Map<Byte, Integer> romanNumeral;
+    public static final Map<Integer, List<Integer>> rulesRomanNumeral;
 
     static {
         romanNumeral = new HashMap<>();
