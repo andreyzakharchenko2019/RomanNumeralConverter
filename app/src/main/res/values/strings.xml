@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RomanNumeralConverter</string>
+    <string name="enter_roman_numeral">Введите римское число</string>
+    <string name="convert">Конверитровать</string>
+    <string name="error_empty_string">Введите что-нибудь, значение не должно быть пустым</string>
+    <string name="error_too_big_numeral">К сожалению, мы можем конвертировать числа только до 3999, включительно</string>
+    <string name="error_numeral_has_space">В цифре не должно быть пробелов</string>
+    <string name="error_roman_numeral">Не верный формат римской цифры</string>
+    <string name="error_roman_numeral_order">Не верный порядок римских цифр</string>
+</resources>
